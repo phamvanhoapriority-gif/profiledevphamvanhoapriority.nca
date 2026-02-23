@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Giao diện NCA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <header class="bg-[#0a1128] text-white py-4 px-8 flex justify-between items-center border-b border-gray-700">
+        <div class="flex items-center gap-10">
+            <div class="text-2xl font-bold flex items-center gap-2">
+                <i class="fas fa-shield-alt text-blue-400"></i> NCA
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#" class="hover:text-blue-400">Dịch vụ <i class="fas fa-chevron-down text-xs"></i></a>
+                <a href="#" class="hover:text-blue-400 text-blue-300">Danh bạ tín nhiệm <i class="fas fa-chevron-down text-xs"></i></a>
+                <a href="#" class="hover:text-blue-400">Tra cứu</a>
+                <a href="#" class="hover:text-blue-400">Tin tức <i class="fas fa-chevron-down text-xs"></i></a>
+                <a href="#" class="hover:text-blue-400">Vinh danh</a>
+            </nav>
+        </div>
+        <button class="bg-green-500 hover:bg-green-600 px-5 py-2 rounded text-sm font-bold">Đăng ký ngay</button>
+    </header>
+
+    <div class="bg-[#0a1128] text-white py-12 px-8 bg-opacity-95 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Thông tin Tổ chức</h1>
+            <p class="text-gray-400 text-sm">Trang chủ / Thông tin tín nhiệm / <span class="text-blue-400">Thông tin tổ chức</span></p>
+        </div>
+        <i class="fas fa-shield-alt absolute right-20 top-0 text-[150px] opacity-10 text-blue-400"></i>
+    </div>
+
+    <main class="max-w-6xl mx-auto p-8 -mt-6">
+        <div class="bg-white rounded-lg shadow-lg p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/640393024_892467150367357_919247512337667019_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeE9PW11Hyw8rrW_E4sw92pM1VH6XdOTWAHVUfpd05NYAbwmZ8WghvPT6f7MtlPAlgJD7uVg3Yx4XWkbAKEJLe55&_nc_ohc=htUoyyCN41kQ7kNvwGKWE-n&_nc_oc=AdknrcIPyX06f_j0dAVLE-zTBAa43hUt-mT8m4zxHlRRNc3UXQXI8rL_p0PBTb8E8qE&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_gid=Y4wiFC6S8Zn20pwohTV2fw&oh=00_Afsr23afGI0CE224JWXo4P0kMEJHsFskoQ7jqnXKOEj6QA&oe=69A1C7E4" alt="Logo" class="w-16 h-16 rounded border p-2">
+                    <div>
+                        <h2 class="text-2xl font-bold flex items-center gap-2">PHẠM VĂN HOÀ
+FULLSTACK DEVELOPER <i class="fas fa-check-circle text-green-500 text-lg"></i></h2>
+                        <div class="text-yellow-400 text-sm mt-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="text-gray-400 ml-2">0 CHỨNG NHẬN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-sm text-gray-600">
+                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Mã số thuế</span> <span class="text-gray-800">8802493379
+</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
+                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Số điện thoại</span> <span class="text-gray-800">0869719516</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
+                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Địa chỉ</span> <span class="text-gray-800 flex-1">TDP YÊN LẠC,PHƯỜNG LÊ HỒ,TỈNH NINH BÌNH</span> <span class="ml-auto text-green-500 text-xs italic">Đã xác thực</span></div>
+                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Email</span> <span class="text-blue-500">phamvanhoapriority@gmail.com</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
+                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Website</span> <span class="text-blue-500">https://phamvanhoapriority-gif.github.io/profiledevphamvanhoapriority/</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border rounded-xl flex flex-col items-center justify-center p-8 text-center">
+                <div class="relative mb-4">
+                    <i class="fas fa-shield-alt text-[100px] text-green-500 opacity-20"></i>
+                    <i class="fas fa-check-circle text-4xl text-green-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-700 uppercase tracking-widest">Đã xác thực</h3>
+                <p class="text-xs text-gray-400 mt-2 italic">Chứng nhận được cấp bởi <span class="font-bold text-blue-900 text-lg italic">NCA</span></p>
+                <button class="mt-4 text-yellow-600 text-xs flex items-center gap-1 border border-yellow-200 bg-yellow-50 px-3 py-1 rounded">
+                    <i class="fas fa-exclamation-triangle"></i> Báo cáo lừa đảo
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="font-bold mb-4 border-b pb-2">Website khác</h3>
+                <p class="text-gray-400 text-sm italic">Không có website khác của Tổ chức.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="font-bold mb-4 border-b pb-2">Mạng xã hội</h3>
+                <div class="flex items-center gap-3">
+                    <i class="fab fa-facebook text-blue-600 text-xl"></i>
+                    <span class="text-blue-500 text-sm font-medium">https://www.facebook.com/phamvanhoapriority2002/?locale=vi_VN</span>
+                    <span class="ml-auto text-green-500 text-xs">Đã xác thực</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
