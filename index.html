@@ -3,91 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Giao diện NCA</title>
+    <title> NCA | Phạm Văn Hòa-FULLSTACK DEVELOPER</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Ngăn vỡ giao diện khi link quá dài */
+        .text-break { word-break: break-all; }
+        .truncate-custom {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 font-sans overflow-x-hidden">
 
-    <header class="bg-[#0a1128] text-white py-4 px-8 flex justify-between items-center border-b border-gray-700">
-        <div class="flex items-center gap-10">
-            <div class="text-2xl font-bold flex items-center gap-2">
+    <header class="bg-[#0a1128] text-white py-4 px-4 md:px-8 flex justify-between items-center border-b border-gray-700 sticky top-0 z-50">
+        <div class="flex items-center gap-4 md:gap-10">
+            <div class="text-xl md:text-2xl font-bold flex items-center gap-2">
                 <i class="fas fa-shield-alt text-blue-400"></i> NCA
             </div>
-            <nav class="hidden md:flex gap-6 text-sm font-medium">
-                <a href="#" class="hover:text-blue-400">Dịch vụ <i class="fas fa-chevron-down text-xs"></i></a>
-                <a href="#" class="hover:text-blue-400 text-blue-300">Danh bạ tín nhiệm <i class="fas fa-chevron-down text-xs"></i></a>
-                <a href="#" class="hover:text-blue-400">Tra cứu</a>
-                <a href="#" class="hover:text-blue-400">Tin tức <i class="fas fa-chevron-down text-xs"></i></a>
-                <a href="#" class="hover:text-blue-400">Vinh danh</a>
+            <nav class="hidden lg:flex gap-6 text-sm font-medium">
+                <a href="#" class="hover:text-blue-400 transition-colors">Dịch vụ</a>
+                <a href="#" class="text-blue-300">Danh bạ tín nhiệm</a>
+                <a href="https://tinnhiemmang.vn/website-lua-dao" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">
+                    Tra cứu
+                </a>
             </nav>
         </div>
-        <button class="bg-green-500 hover:bg-green-600 px-5 py-2 rounded text-sm font-bold">Đăng ký ngay</button>
+        <a href="https://tinnhiemmang.vn/" target="_blank" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-xs md:text-sm font-bold transition-all shadow-lg active:scale-95">
+            Đăng ký ngay
+        </a>
     </header>
 
-    <div class="bg-[#0a1128] text-white py-12 px-8 bg-opacity-95 relative overflow-hidden">
+    <div class="bg-[#0a1128] text-white py-8 md:py-16 px-4 md:px-8 relative overflow-hidden">
         <div class="max-w-6xl mx-auto">
-            <h1 class="text-3xl font-bold mb-2">Thông tin Tổ chức</h1>
-            <p class="text-gray-400 text-sm">Trang chủ / Thông tin tín nhiệm / <span class="text-blue-400">Thông tin tổ chức</span></p>
+            <h1 class="text-2xl md:text-4xl font-bold mb-2">Thông tin Tổ chức</h1>
+            <p class="text-gray-400 text-xs md:text-sm">Trang chủ / <span class="text-blue-400">Thông tin tổ chức</span></p>
         </div>
-        <i class="fas fa-shield-alt absolute right-20 top-0 text-[150px] opacity-10 text-blue-400"></i>
+        <i class="fas fa-shield-alt absolute right-[-20px] top-0 text-[120px] md:text-[200px] opacity-10 text-blue-400"></i>
     </div>
 
-    <main class="max-w-6xl mx-auto p-8 -mt-6">
-        <div class="bg-white rounded-lg shadow-lg p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <main class="max-w-6xl mx-auto p-4 md:p-8 -mt-10 relative z-10">
+        <div class="bg-white rounded-2xl shadow-2xl p-5 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div class="md:col-span-2">
-                <div class="flex items-center gap-4 mb-6">
-                    <img src="https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/641277849_893205203626885_5218019562517282828_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeF7ZeiUygKhDGbQK3Zn30XG3TWkZe2nUgbdNaRl7adSBjk5hs_weHY8GU8PztuwzcJ3aG4EvyWPTE0uzHgwSkoD&_nc_ohc=OAiKhJJ3yWQQ7kNvwH8jUnv&_nc_oc=AdlR57udhuSzep9Gm2ZXUs6KAgxR4z22Y5vV_pa6lLBsPgW0WTWlU7JLdC9VlFKCQeI&_nc_zt=23&_nc_ht=scontent.fhan4-2.fna&_nc_gid=_nBIjXDLeYPK52NLz_XZzA&oh=00_Afvh4fq2vZG4PCep6m5UWbW78i0V653k7C4yR2KhdHFeAA&oe=69A2EF17" alt="Logo" class="w-16 h-16 rounded border p-2">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-8 text-center sm:text-left">
+                    <img src="https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/641277849_893205203626885_5218019562517282828_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeF7ZeiUygKhDGbQK3Zn30XG3TWkZe2nUgbdNaRl7adSBjk5hs_weHY8GU8PztuwzcJ3aG4EvyWPTE0uzHgwSkoD&_nc_ohc=OAiKhJJ3yWQQ7kNvwH8jUnv&_nc_oc=AdlR57udhuSzep9Gm2ZXUs6KAgxR4z22Y5vV_pa6lLBsPgW0WTWlU7JLdC9VlFKCQeI&_nc_zt=23&_nc_ht=scontent.fhan4-2.fna&_nc_gid=_nBIjXDLeYPK52NLz_XZzA&oh=00_Afvh4fq2vZG4PCep6m5UWbW78i0V653k7C4yR2KhdHFeAA&oe=69A2EF17" alt="Logo" class="w-24 h-24 rounded-xl border-2 border-gray-100 p-1 shadow-md">
                     <div>
-                        <h2 class="text-2xl font-bold flex items-center gap-2">PHẠM VĂN HOÀ
-FULLSTACK DEVELOPER <i class="fas fa-check-circle text-green-500 text-lg"></i></h2>
-                        <div class="text-yellow-400 text-sm mt-1">
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-800 leading-tight">
+                            PHẠM VĂN HOÀ
+                            <span class="text-blue-600 text-sm block sm:inline-block sm:ml-3 font-semibold tracking-wide bg-blue-50 px-3 py-1 rounded-full mt-2 sm:mt-0">
+                                FULLSTACK DEVELOPER
+                            </span>
+                        </h2>
+                        <div class="text-yellow-400 text-xs mt-3 flex items-center justify-center sm:justify-start gap-1">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            <span class="text-gray-400 ml-2">0 CHỨNG NHẬN</span>
+                            <span class="text-gray-400 ml-2 font-normal uppercase tracking-tighter">0 Chứng nhận tín nhiệm</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-4 text-sm text-gray-600">
-                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Mã số thuế</span> <span class="text-gray-800">8802493379
-</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
-                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Số điện thoại</span> <span class="text-gray-800">0869719516</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
-                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Địa chỉ</span> <span class="text-gray-800 flex-1">TDP YÊN LẠC,PHƯỜNG LÊ HỒ,TỈNH NINH BÌNH</span> <span class="ml-auto text-green-500 text-xs italic">Đã xác thực</span></div>
-                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Email</span> <span class="text-blue-500">phamvanhoapriority@gmail.com</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
-                    <div class="flex border-b pb-2"><span class="w-32 font-semibold">Website</span> <span class="text-blue-500">https://phamvanhoapriority-gif.github.io/profiledevphamvanhoapriority/</span> <span class="ml-auto text-green-500 text-xs">Đã xác thực</span></div>
+                <div class="space-y-5">
+                    <div class="flex flex-col sm:flex-row border-b border-gray-100 pb-3 gap-1">
+                        <span class="w-full sm:w-40 font-bold text-gray-400 uppercase text-[11px] self-center">Mã số thuế</span>
+                        <span class="text-gray-800 font-semibold text-base">8802493379</span>
+                        <span class="sm:ml-auto text-green-500 text-[10px] font-bold bg-green-50 px-2 py-1 rounded flex items-center gap-1 w-fit">
+                            XÁC THỰC <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row border-b border-gray-100 pb-3 gap-1">
+                        <span class="w-full sm:w-40 font-bold text-gray-400 uppercase text-[11px] self-center">Số điện thoại</span>
+                        <span class="text-gray-800 font-medium text-base">0869719516</span>
+                        <span class="sm:ml-auto text-green-500 text-[10px] font-bold bg-green-50 px-2 py-1 rounded flex items-center gap-1 w-fit">
+                            XÁC THỰC <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row border-b border-gray-100 pb-3 gap-1">
+                        <span class="w-full sm:w-40 font-bold text-gray-400 uppercase text-[11px] self-center">Địa chỉ</span>
+                        <span class="text-gray-800 flex-1 leading-relaxed">TDP Yên Lạc, Phường Lê Hồ, Tỉnh Ninh Bình</span>
+                        <span class="sm:ml-auto text-green-500 text-[10px] font-bold bg-green-50 px-2 py-1 rounded flex items-center gap-1 w-fit">
+                            XÁC THỰC <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row border-b border-gray-100 pb-3 gap-1">
+                        <span class="w-full sm:w-40 font-bold text-gray-400 uppercase text-[11px] self-center">Email</span>
+                        <span class="text-blue-600 font-medium text-break">phamvanhoapriority@gmail.com</span>
+                        <span class="sm:ml-auto text-green-500 text-[10px] font-bold bg-green-50 px-2 py-1 rounded flex items-center gap-1 w-fit">
+                            XÁC THỰC <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row border-b border-gray-100 pb-3 gap-1">
+                        <span class="w-full sm:w-40 font-bold text-gray-400 uppercase text-[11px] self-center">Website</span>
+                        <a href="https://phamvanhoapriority-gif.github.io/profiledevphamvanhoapriority/" target="_blank" class="text-blue-600 font-medium hover:underline truncate-custom flex-1">
+                            phamvanhoapriority-gif.github.io...
+                        </a>
+                        <span class="sm:ml-auto text-green-500 text-[10px] font-bold bg-green-50 px-2 py-1 rounded flex items-center gap-1 w-fit">
+                            XÁC THỰC <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="bg-gray-50 border rounded-xl flex flex-col items-center justify-center p-8 text-center">
-                <div class="relative mb-4">
-                    <i class="fas fa-shield-alt text-[100px] text-green-500 opacity-20"></i>
-                    <i class="fas fa-check-circle text-4xl text-green-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+            <div class="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-2xl flex flex-col items-center justify-center p-8 text-center shadow-inner h-fit">
+                <div class="relative mb-6">
+                    <i class="fas fa-shield-alt text-[100px] text-green-500 opacity-10"></i>
+                    <i class="fas fa-check-circle text-5xl text-green-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-md"></i>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-700 uppercase tracking-widest">Đã xác thực</h3>
-                <p class="text-xs text-gray-400 mt-2 italic">Chứng nhận được cấp bởi <span class="font-bold text-blue-900 text-lg italic">NCA</span></p>
-                <button class="mt-4 text-yellow-600 text-xs flex items-center gap-1 border border-yellow-200 bg-yellow-50 px-3 py-1 rounded">
-                    <i class="fas fa-exclamation-triangle"></i> Báo cáo lừa đảo
-                </button>
+                <h3 class="text-2xl font-black text-blue-900 uppercase tracking-widest">Đã xác thực</h3>
+                <p class="text-[11px] text-gray-400 mt-2 italic uppercase">Chứng nhận bảo mật bởi <br> 
+                    <span class="font-black text-blue-600 text-xl tracking-tighter">NCA PROTECTION</span>
+                </p>
+                <div class="w-full h-[1px] bg-gray-200 my-6"></div>
+                <a href="https://tinnhiemmang.vn/website-lua-dao" target="_blank" class="w-full text-red-500 text-[12px] font-bold flex items-center justify-center gap-2 border-2 border-red-100 bg-white px-4 py-3 rounded-xl hover:bg-red-500 hover:text-white hover:border-red-500 transition-all shadow-sm">
+                    <i class="fas fa-exclamation-triangle"></i> BÁO CÁO LỪA ĐẢO
+                </a>
             </div>
         </div>
 
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="font-bold mb-4 border-b pb-2">Website khác</h3>
-                <p class="text-gray-400 text-sm italic">Không có website khác của Tổ chức.</p>
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-50">
+                <h3 class="font-bold text-gray-700 mb-4 text-sm flex items-center gap-2 uppercase tracking-wider">
+                    <i class="fas fa-link text-blue-400"></i> Website khác
+                </h3>
+                <p class="text-gray-400 text-xs italic">Không có website khác trong danh sách.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="font-bold mb-4 border-b pb-2">Mạng xã hội</h3>
-                <div class="flex items-center gap-3">
-                    <i class="fab fa-facebook text-blue-600 text-xl"></i>
-                    <span class="text-blue-500 text-sm font-medium">https://www.facebook.com/phamvanhoapriority2002/?locale=vi_VN</span>
-                    <span class="ml-auto text-green-500 text-xs">Đã xác thực</span>
+            
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-50">
+                <h3 class="font-bold text-gray-700 mb-4 text-sm flex items-center gap-2 uppercase tracking-wider">
+                    <i class="fab fa-facebook-messenger text-blue-500"></i> Mạng xã hội
+                </h3>
+                <div class="flex items-center gap-4 bg-gray-50 p-3 rounded-xl border border-dashed border-gray-200">
+                    <i class="fab fa-facebook text-blue-600 text-3xl"></i>
+                    <div class="flex-1 overflow-hidden">
+                        <p class="text-blue-600 text-xs font-bold truncate">facebook.com/phamvanhoapriority2002</p>
+                        <span class="text-green-500 text-[9px] font-black uppercase mt-1 flex items-center gap-1">
+                            <i class="fas fa-check-double"></i> Chính chủ
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-</body>
+    <footer class="text-center py-12 text-gray-400 text-[10px] uppercase tracking-[0.2em]">
+        <p>&copy; 2024 NCA Protection. Security & Trust. All rights reserved.</p>
+        <div class="mt-2 flex justify-center gap-4 grayscale opacity-50">
+            <i class="fab fa-cc-visa fa-2x"></i>
+            <i class="fab fa-cc-mastercard fa-2x"></i>
+            <i class="fas fa-user-shield fa-2x"></i>
+        </div>
+    </footer>
 
+</body>
 </html>
